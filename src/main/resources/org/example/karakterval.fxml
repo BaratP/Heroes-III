@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.KarakterController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="257.0" layoutY="124.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@img/Load.jpg" />
+         </image></ImageView>
+      <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#butPrimary" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5;" text="Back" textFill="WHITE" AnchorPane.bottomAnchor="11.8" AnchorPane.leftAnchor="14.0" />
+      <Button layoutX="69.0" layoutY="561.0" mnemonicParsing="false" onAction="#butSpell" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Spell" textFill="WHITE" />
+      <Button layoutX="127.0" layoutY="561.0" mnemonicParsing="false" onAction="#butVasarlas" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Unit" textFill="WHITE" />
+      <Button layoutX="25.0" layoutY="236.0" mnemonicParsing="false" prefHeight="27.2" prefWidth="65.6" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5;" text="5 Gold" textFill="WHITE" AnchorPane.leftAnchor="25.0" />
+      <Button ellipsisString="+" layoutX="215.0" layoutY="236.0" mnemonicParsing="false" onAction="#butTamadasVasarlas" prefHeight="26.0" prefWidth="23.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Button" textFill="WHITE" AnchorPane.leftAnchor="215.0" />
+      <Label alignment="CENTER" layoutX="95.0" layoutY="236.0" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Támadás:" textFill="WHITE" AnchorPane.leftAnchor="95.0" />
+      <Label fx:id="tamadasSzamlalo" alignment="CENTER" layoutX="185.0" layoutY="236.0" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="1" textFill="WHITE" AnchorPane.leftAnchor="185.0" />
+      <Button layoutX="25.0" layoutY="286.0" mnemonicParsing="false" prefHeight="27.2" prefWidth="65.6" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5;" text="5 Gold" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="286.0" />
+      <Button layoutX="25.0" layoutY="336.0" mnemonicParsing="false" prefHeight="27.2" prefWidth="65.6" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5;" text="5 Gold" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="336.0" />
+      <Button layoutX="809.0" layoutY="336.0" mnemonicParsing="false" prefHeight="27.2" prefWidth="65.6" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5;" text="5 Gold" textFill="WHITE" AnchorPane.rightAnchor="25.399999999999977" AnchorPane.topAnchor="336.0" />
+      <Button layoutX="809.0" layoutY="286.0" mnemonicParsing="false" prefHeight="27.2" prefWidth="65.6" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5;" text="5 Gold" textFill="WHITE" AnchorPane.rightAnchor="25.399999999999977" AnchorPane.topAnchor="286.0" />
+      <Label alignment="CENTER" layoutX="718.0" layoutY="236.0" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text=":Tudás" textFill="WHITE" AnchorPane.leftAnchor="718.0" AnchorPane.rightAnchor="95.60000000000002" AnchorPane.topAnchor="236.0" />
+      <Button layoutX="809.0" layoutY="236.0" mnemonicParsing="false" prefHeight="27.2" prefWidth="65.6" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5;" text="5 Gold" textFill="WHITE" AnchorPane.rightAnchor="25.399999999999977" AnchorPane.topAnchor="236.0" />
+      <Label fx:id="tudasSzamlalo" alignment="CENTER" layoutX="688.0" layoutY="236.0" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="1" textFill="WHITE" AnchorPane.leftAnchor="688.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="236.0" />
+      <Button ellipsisString="+" layoutX="658.0" layoutY="236.0" mnemonicParsing="false" onAction="#butTudasVasarlas" prefHeight="26.0" prefWidth="23.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Button" textFill="WHITE" AnchorPane.leftAnchor="658.0" AnchorPane.rightAnchor="215.60000000000002" AnchorPane.topAnchor="236.0" />
+      <Label alignment="CENTER" layoutX="718.0" layoutY="286.0" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text=":Morál" textFill="WHITE" AnchorPane.leftAnchor="718.0" AnchorPane.rightAnchor="95.60000000000002" AnchorPane.topAnchor="286.0" />
+      <Label alignment="CENTER" layoutX="718.0" layoutY="336.0" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text=":Szerencse" textFill="WHITE" AnchorPane.leftAnchor="718.0" AnchorPane.rightAnchor="95.60000000000002" AnchorPane.topAnchor="336.0" />
+      <Label fx:id="moralSzamlalo" alignment="CENTER" layoutX="688.0" layoutY="286.0" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="1" textFill="WHITE" AnchorPane.leftAnchor="688.0" />
+      <Label fx:id="szerencseSzamlalo" alignment="CENTER" layoutX="688.0" layoutY="336.0" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="1" textFill="WHITE" AnchorPane.leftAnchor="688.0" AnchorPane.rightAnchor="185.60000000000002" />
+      <Button ellipsisString="+" layoutX="658.0" layoutY="286.0" mnemonicParsing="false" onAction="#butMoralVasarlas" prefHeight="26.0" prefWidth="23.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Button" textFill="WHITE" AnchorPane.leftAnchor="658.0" />
+      <Button ellipsisString="+" layoutX="658.0" layoutY="336.0" mnemonicParsing="false" onAction="#butSzerencseVasarlas" prefHeight="26.0" prefWidth="23.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Button" textFill="WHITE" AnchorPane.leftAnchor="658.0" />
+      <Label alignment="CENTER" layoutX="95.0" layoutY="286.0" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Védekezés:" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="95.0" layoutY="335.0" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Varázserő:" textFill="WHITE" />
+      <Label fx:id="vedekezesSzamlalo" alignment="CENTER" layoutX="185.0" layoutY="286.0" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="1" textFill="WHITE" />
+      <Label fx:id="varazseroSzamlalo" alignment="CENTER" layoutX="185.0" layoutY="335.0" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="1" textFill="WHITE" />
+      <Button ellipsisString="+" layoutX="215.0" layoutY="286.0" mnemonicParsing="false" onAction="#butVedekezesVasarlas" prefHeight="26.0" prefWidth="23.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Button" textFill="WHITE" />
+      <Button ellipsisString="+" layoutX="215.0" layoutY="335.0" mnemonicParsing="false" onAction="#butVarazseroVasarlas" prefHeight="26.0" prefWidth="23.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Button" textFill="WHITE" />
+      <Button layoutX="802.0" layoutY="481.0" mnemonicParsing="false" onAction="#butHarc" prefHeight="94.0" prefWidth="86.0" style="-fx-background-color: rgba(0,0,0,0.6); -fx-background-radius: 100;" text="START" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="aktualisArany" layoutX="400.0" layoutY="554.0" style="-fx-border-color: gold; -fx-padding: 3; -fx-border-radius: 100; -fx-background-color: rgba(228,216,52,0.2); -fx-background-radius: 100;" text="Arany: 1000" AnchorPane.bottomAnchor="6.799999999999997">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8947368264198303" green="0.8487849235534668" blue="0.20545808970928192" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8941176533699036" green="0.8470588326454163" blue="0.20392157137393951" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane fx:id="ancEllenfel" layoutX="365.0" layoutY="28.0" opacity="0.0" prefHeight="493.0" prefWidth="187.0" style="-fx-background-color: rgba(0,0,0,0.7); -fx-border-color: white; -fx-border-width: 3;">
+         <children>
+            <ImageView fitHeight="175.0" fitWidth="178.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/KarakterFej.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="194.0" prefHeight="222.0" prefWidth="159.0" text="Támadás: 8&#10;Védekezés: 10&#10;Varázserő: 1&#10;Tudás: 1&#10;Morál: 1&#10;Szerencse: 1&#10;&#10;Griff: 10&#10;Alchemist: 10&#10;Falusi: 10&#10;Ijász: 10&#10;Harcos: 10&#10;varazsltlat: nem vásárolt" textAlignment="CENTER" textFill="WHITE" underline="true" />
+            <Label alignment="CENTER" layoutX="6.0" layoutY="435.0" prefHeight="58.0" prefWidth="175.0" style="-fx-border-color: white; -fx-border-width: 3;" text="ELLENFÉL" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="185.0" layoutY="561.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: white;" text="Stat" AnchorPane.topAnchor="561.0" />
+      <Button layoutX="241.0" layoutY="561.0" mnemonicParsing="false" onAction="#butEllefel" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Ellenfél Revaeal" textFill="WHITE" />
+   </children>
+</AnchorPane>

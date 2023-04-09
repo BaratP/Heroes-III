@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.AppController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="165.0" layoutY="88.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@img/Fooldal.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="670.0" layoutY="222.0" mnemonicParsing="false" onAction="#butNehezVal" opacity="0.0" prefHeight="133.0" prefWidth="122.0" />
+      <ImageView accessibleRole="BUTTON" fitHeight="107.0" fitWidth="129.0" layoutY="493.0" onMouseReleased="#butExitClicked" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

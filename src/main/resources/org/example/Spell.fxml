@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.SpellController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="94.0" layoutY="31.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@img/Load.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="803.0" layoutY="481.0" mnemonicParsing="false" onAction="#butHarc" prefHeight="94.0" prefWidth="83.0" style="-fx-background-color: rgba(0,0,0,0.6); -fx-background-radius: 100;" text="START" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="aktualisAranyS" layoutX="407.0" layoutY="541.0" style="-fx-border-color: gold; -fx-padding: 3; -fx-border-radius: 100; -fx-background-color: rgba(228,216,52,0.2); -fx-background-radius: 100;" text="Gold: 1000" AnchorPane.bottomAnchor="19.799999999999955">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8947368264198303" green="0.8487849235534668" blue="0.20545808970928192" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8941176533699036" green="0.8470588326454163" blue="0.20392157137393951" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="24.0" layoutY="571.0" mnemonicParsing="false" onAction="#butPrimary" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5;" text="Back" textFill="WHITE" AnchorPane.bottomAnchor="11.8" AnchorPane.leftAnchor="14.0" />
+      <Button layoutX="127.0" layoutY="561.0" mnemonicParsing="false" onAction="#butVasarlas" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Unit" textFill="WHITE" />
+      <Button layoutX="185.0" layoutY="561.0" mnemonicParsing="false" onAction="#butKarakterVal" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Stat" textFill="WHITE" />
+      <Button layoutX="69.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: white;" text="Spell" />
+      <Label layoutX="173.0" layoutY="120.0" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: black; -fx-border-radius: 5 5 0 0; -fx-border-color: white; -fx-label-padding: 3;" text="Fireball" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Fireball.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="173.0" layoutY="169.0" prefHeight="190.0" prefWidth="107.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 5;" text="Egy kiválasztott mező körüli 3x3-as területen lévő összes (saját, illetve ellenséges) sebzést okoz:       120 Arany           9 Mana" textFill="WHITE" wrapText="true" />
+      <Label layoutX="407.0" layoutY="169.0" prefHeight="190.0" prefWidth="107.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 5;" text="Egy kiválasztott ellenséges egységre sebzét okoz:                 60 Arany             5 Mana" textFill="WHITE" wrapText="true" />
+      <Button layoutX="407.0" layoutY="359.0" mnemonicParsing="false" onAction="#butVillamlasVasarlas" prefHeight="27.0" prefWidth="107.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 0 0 5 5;" text="Buy" textFill="WHITE" />
+      <Label layoutX="407.0" layoutY="120.0" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: black; -fx-border-radius: 5 5 0 0; -fx-border-color: white; -fx-label-padding: 3; -fx-padding: 3 0 0 0;" text="Thunder" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/ThunderBolt.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="641.0" layoutY="169.0" prefHeight="190.0" prefWidth="107.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 5;" text="Egy kiválasztott saját egység feltámasztása: 120 Arany            6 Mana" textFill="WHITE" wrapText="true" />
+      <Button layoutX="641.0" layoutY="359.0" mnemonicParsing="false" onAction="#butFeltamasztasVasarlas" prefHeight="27.0" prefWidth="107.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 0 0 5 5;" text="Buy" textFill="WHITE" />
+      <Label layoutX="641.0" layoutY="120.0" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: black; -fx-border-radius: 5 5 0 0; -fx-border-color: white; -fx-label-padding: 3; -fx-padding: 3 0 0 0;" text="Revive" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Revive.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Button layoutX="173.0" layoutY="359.0" mnemonicParsing="false" onAction="#butTuzlabdaVasarlas" prefHeight="27.0" prefWidth="107.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 0 0 5 5;" text="Buy" textFill="WHITE" />
+   </children>
+</AnchorPane>

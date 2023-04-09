@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.UnitController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@img/Load.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="69.0" layoutY="561.0" mnemonicParsing="false" onAction="#butSpell" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Spell" textFill="WHITE" />
+      <Button layoutX="127.0" layoutY="561.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: white;" text="Unit" />
+      <Button layoutX="185.0" layoutY="561.0" mnemonicParsing="false" onAction="#butKarakterVal" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: black; -fx-border-radius: 5; -fx-border-color: white;" text="Stat" textFill="WHITE" />
+      <Label fx:id="aktualisAranyU" layoutX="400.0" layoutY="554.0" style="-fx-border-color: gold; -fx-padding: 3; -fx-border-radius: 100; -fx-background-color: rgba(228,216,52,0.2); -fx-background-radius: 100;" text="Arany: 1000">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8947368264198303" green="0.8487849235534668" blue="0.20545808970928192" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8941176533699036" green="0.8470588326454163" blue="0.20392157137393951" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="803.0" layoutY="481.0" mnemonicParsing="false" onAction="#butHarc" prefHeight="94.0" prefWidth="83.0" style="-fx-background-color: rgba(0,0,0,0.6); -fx-background-radius: 100;" text="START" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#butPrimary" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5;" text="Back" textFill="WHITE" />
+      <Label layoutX="15.0" layoutY="113.0" prefHeight="76.0" prefWidth="83.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5 0 0 5;" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="156.0" pickOnBounds="true">
+               <image>
+                  <Image url="@img/Foldmuves.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="266.0" layoutY="152.0" mnemonicParsing="false" onAction="#butFalusiVasarol" prefHeight="56.5" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white;" text="Buy1" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Label alignment="CENTER" layoutX="171.0" layoutY="113.0" prefHeight="152.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3;" text="name: Farmer  cost: 2 Gold dmg: 1-1        hp: 3          speed: 4    initiative: 8  special: none" textFill="WHITE" wrapText="true" />
+      <Label layoutX="306.0" layoutY="113.0" prefHeight="76.0" prefWidth="83.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5 0 0 5;" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="176.0" onDragDetected="#butGriffVasarol" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/griff.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER" layoutX="462.0" layoutY="113.0" prefHeight="152.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3;" text="name: Griff&#10;cost: 15 Gold&#10;dmg: 5-10&#10;hp: 30&#10;speed: 7&#10;initiative: 15&#10;special: végtelen-visszatámadás" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label layoutX="595.0" layoutY="113.0" prefHeight="76.0" prefWidth="83.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5 0 0 5;" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="153.0" onDragDetected="#butIjaszVasarol" pickOnBounds="true">
+               <image>
+                  <Image url="@img/ijasz.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER" layoutX="751.0" layoutY="113.0" prefHeight="152.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3;" text="name: Archer&#10;cost: 6 Gold&#10;dmg: 2-4&#10;hp: 7&#10;speed: 4&#10;initiative: 9&#10;special: lövés" textFill="WHITE" wrapText="true" />
+      <Label layoutX="15.0" layoutY="265.0" prefHeight="76.0" prefWidth="83.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5 0 0 5;" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="154.0" pickOnBounds="true">
+               <image>
+                  <Image url="@img/Alchemist.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER" layoutX="171.0" layoutY="265.0" prefHeight="152.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3;" text="name: Alchstemist&#10;cost: 10&#10;Gold dmg: 5-8&#10;hp: 15&#10;speed: 5&#10;initiative: 13&#10;special: Dobás" textFill="WHITE" wrapText="true" />
+      <Label layoutX="595.0" layoutY="265.0" prefHeight="76.0" prefWidth="83.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5 0 0 5;" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="153.0" pickOnBounds="true">
+               <image>
+                  <Image url="@img/Harcos.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER" layoutX="751.0" layoutY="265.0" prefHeight="152.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3;" text="name: Warrior&#10;cost: 20 Gold&#10;dmg: 2-5&#10;hp: 50&#10;speed: 2&#10;initiative: 14&#10;special: Sebzés felezés" textFill="WHITE" wrapText="true" />
+      <Label fx:id="farmerSzamlalo" alignment="CENTER" layoutX="266.0" layoutY="113.0" prefHeight="39.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3; -fx-border-radius: 0 5 0 0;" text="0" textFill="WHITE" wrapText="true" />
+      <Button layoutX="557.0" layoutY="208.0" mnemonicParsing="false" onAction="#butGriffVasarol10" prefHeight="57.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-radius: 0 0 5 0; -fx-border-color: white;" text="Buy10" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Label fx:id="griffSzamlalo" alignment="CENTER" layoutX="557.0" layoutY="113.0" prefHeight="39.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3; -fx-border-radius: 0 5 0 0;" text="0" textFill="WHITE" wrapText="true" />
+      <Button layoutX="846.0" layoutY="208.0" mnemonicParsing="false" onAction="#butIjaszVasarol10" prefHeight="57.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-radius: 0 0 5 0; -fx-border-color: white;" text="Buy10" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Label fx:id="ijaszSzamlalo" alignment="CENTER" layoutX="846.0" layoutY="113.0" prefHeight="39.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3; -fx-border-radius: 0 5 0 0;" text="0" textFill="WHITE" wrapText="true" />
+      <Button layoutX="266.0" layoutY="360.0" mnemonicParsing="false" onAction="#butAlcVasarol10" prefHeight="57.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-radius: 0 0 5 0; -fx-border-color: white;" text="Buy10" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Label fx:id="alchemistSzamlalo" alignment="CENTER" layoutX="266.0" layoutY="265.0" prefHeight="39.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3; -fx-border-radius: 0 5 0 0;" text="0" textFill="WHITE" wrapText="true" />
+      <Button layoutX="846.0" layoutY="360.0" mnemonicParsing="false" onAction="#butHarcosVasarol10" prefHeight="57.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-radius: 0 0 5 0; -fx-border-color: white;" text="Buy10" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Label fx:id="harcosSzamlalo" alignment="CENTER" layoutX="846.0" layoutY="265.0" prefHeight="39.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white; -fx-label-padding: 0 3 0 3; -fx-border-radius: 0 5 0 0;" text="0" textFill="WHITE" wrapText="true" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="266.0" layoutY="208.0" mnemonicParsing="false" onAction="#butFalusiVasarol10" prefHeight="56.5" prefWidth="38.0" style="-fx-background-color: black; -fx-border-radius: 0 0 5 0; -fx-border-color: white;" text="Buy10" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button layoutX="266.0" layoutY="304.0" mnemonicParsing="false" onAction="#butAlcVasarol" prefHeight="57.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white;" text="Buy1" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button layoutX="557.0" layoutY="151.0" mnemonicParsing="false" onAction="#butGriffVasarol" prefHeight="57.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white;" text="Buy1" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button layoutX="846.0" layoutY="151.0" mnemonicParsing="false" onAction="#butIjaszVasarol" prefHeight="57.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white;" text="Buy1" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button layoutX="846.0" layoutY="304.0" mnemonicParsing="false" onAction="#butHarcosVasarol" prefHeight="57.0" prefWidth="38.0" style="-fx-background-color: black; -fx-border-color: white;" text="Buy1" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+   </children>
+</AnchorPane>
